@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var model: Model = .init(stepLength: 2.0)
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
         }
-        .padding()
+        .frame(width: 100, height: 100)
+        .background(model.color)
     }
 }
 
