@@ -12,12 +12,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            HStack{
+                Spacer()
+            }
+            Spacer()
         }
-        .frame(width: 100, height: 100)
         .background(model.color)
     }
 }
 
 #Preview {
     ContentView()
+        .frame(width: 200, height: 300)
 }
